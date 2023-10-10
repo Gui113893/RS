@@ -1,0 +1,37 @@
+Oct 10 08:41:10.188 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Oct 10 08:41:10.188 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 41845.
+Oct 10 08:41:10.197 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 10 08:41:10.197 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/Project01/project-files/dynamips 
+Oct 10 08:41:10.197 GENERAL: working_dir=/root/GNS3/projects/Project01/project-files/dynamips
+Oct 10 08:41:10.197 HYPERVISOR: exec_cmd: hypervisor working_dir /root/GNS3/projects/Project01/project-files/dynamips/147f98ba-c44a-4d02-95dd-ec75d975d3a8 
+Oct 10 08:41:10.197 GENERAL: working_dir=/root/GNS3/projects/Project01/project-files/dynamips/147f98ba-c44a-4d02-95dd-ec75d975d3a8
+Oct 10 08:41:10.197 HYPERVISOR: exec_cmd: vm create Switch2 2 c3725 
+Oct 10 08:41:10.197 VM: VM Switch2 created.
+Oct 10 08:41:10.197 HYPERVISOR: exec_cmd: vm set_con_tcp_port Switch2 5002 
+Oct 10 08:41:10.197 HYPERVISOR: exec_cmd: c3725 get_mac_addr Switch2 
+Oct 10 08:41:10.198 HYPERVISOR: exec_cmd: vm set_disk0 Switch2 1 
+Oct 10 08:41:10.198 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 10 08:41:10.198 HYPERVISOR: exec_cmd: vm set_idle_pc Switch2 0x60a68e70 
+Oct 10 08:41:10.198 HYPERVISOR: exec_cmd: vm set_ios Switch2 /root/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Oct 10 08:41:10.198 HYPERVISOR: exec_cmd: c3725 set_mac_addr Switch2 c202.0ee7.0000 
+Oct 10 08:41:10.198 HYPERVISOR: exec_cmd: vm set_nvram Switch2 256 
+Oct 10 08:41:10.198 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 10 08:41:10.198 HYPERVISOR: exec_cmd: vm slot_add_binding Switch2 1 0 NM-16ESW 
+Oct 10 08:41:10.491 HYPERVISOR: exec_cmd: nio create_udp udp-1e38f11e-4e28-45fd-b458-2ce392e6690b 10010 127.0.0.1 10011 
+Oct 10 08:41:10.698 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Switch2 1 0 udp-1e38f11e-4e28-45fd-b458-2ce392e6690b 
+Oct 10 08:41:10.699 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 10 08:41:10.739 HYPERVISOR: exec_cmd: nio create_udp udp-f7256fc5-633a-4b56-ad11-851c7998cc5f 10014 127.0.0.1 10015 
+Oct 10 08:41:10.740 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Switch2 1 1 udp-f7256fc5-633a-4b56-ad11-851c7998cc5f 
+Oct 10 08:41:10.740 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 10 08:41:10.757 HYPERVISOR: exec_cmd: nio create_udp udp-cd0ce3ec-98cf-4f34-a9f4-5a8158a02876 10018 127.0.0.1 10019 
+Oct 10 08:41:10.758 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Switch2 1 5 udp-cd0ce3ec-98cf-4f34-a9f4-5a8158a02876 
+Oct 10 08:41:10.758 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 10 08:43:29.259 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 10 08:43:29.260 HYPERVISOR: exec_cmd: vm extract_config Switch2 
+Oct 10 08:43:29.266 HYPERVISOR: exec_cmd: vm get_status Switch2 
+Oct 10 08:43:29.267 HYPERVISOR: exec_cmd: vm extract_config Switch2 
+Oct 10 08:43:29.267 HYPERVISOR: exec_cmd: vm delete Switch2 
+Oct 10 08:43:29.267 VM: VM Switch2 destroyed.
+Oct 10 08:43:29.267 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 10 08:43:29.363 HYPERVISOR: Stopped.
+Oct 10 08:43:29.363 GENERAL: reset done.

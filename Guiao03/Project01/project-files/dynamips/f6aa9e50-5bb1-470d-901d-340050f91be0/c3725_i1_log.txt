@@ -1,0 +1,1 @@
+Oct 10 08:43:29.504 VM: trying to shutdown an inactive VM.
