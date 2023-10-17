@@ -1,0 +1,27 @@
+Oct 17 10:52:35.797 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Oct 17 10:52:35.797 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59257.
+Oct 17 10:52:35.804 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 17 10:52:35.804 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guipc/Desktop/LEI/2ºAno/1ºSemestre/RS/P4/project-files/dynamips 
+Oct 17 10:52:35.804 GENERAL: working_dir=/home/guipc/Desktop/LEI/2ºAno/1ºSemestre/RS/P4/project-files/dynamips
+Oct 17 10:52:35.804 HYPERVISOR: exec_cmd: ethsw create Switch1 
+Oct 17 10:52:35.942 HYPERVISOR: exec_cmd: nio create_udp udp-0e81df92-62d8-4d7e-a2c7-86be0c57c431 10001 127.0.0.1 10000 
+Oct 17 10:52:35.942 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-0e81df92-62d8-4d7e-a2c7-86be0c57c431 
+Oct 17 10:52:35.948 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Switch1 udp-0e81df92-62d8-4d7e-a2c7-86be0c57c431 1 
+Oct 17 10:52:35.970 HYPERVISOR: exec_cmd: nio create_udp udp-9ac1a838-dae4-4d47-8473-38a843619235 10003 127.0.0.1 10002 
+Oct 17 10:52:35.970 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-9ac1a838-dae4-4d47-8473-38a843619235 
+Oct 17 10:52:35.989 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-9ac1a838-dae4-4d47-8473-38a843619235 1 
+Oct 17 10:52:36.011 HYPERVISOR: exec_cmd: nio create_udp udp-6d3b685a-1aca-47d7-98ad-730149e8178b 10005 127.0.0.1 10004 
+Oct 17 10:52:36.011 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-6d3b685a-1aca-47d7-98ad-730149e8178b 
+Oct 17 10:52:36.029 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-6d3b685a-1aca-47d7-98ad-730149e8178b 2 
+Oct 17 10:52:36.052 HYPERVISOR: exec_cmd: nio create_udp udp-e48a7b5e-36b4-4ba9-9c78-8cdc859292b4 10007 127.0.0.1 10006 
+Oct 17 10:52:36.052 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-e48a7b5e-36b4-4ba9-9c78-8cdc859292b4 
+Oct 17 10:52:36.069 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-e48a7b5e-36b4-4ba9-9c78-8cdc859292b4 3 
+Oct 17 10:52:36.463 HYPERVISOR: exec_cmd: nio create_udp udp-e01f90e0-9686-4af9-aebe-66e0bb6beff5 10019 127.0.0.1 10018 
+Oct 17 10:52:36.464 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-e01f90e0-9686-4af9-aebe-66e0bb6beff5 
+Oct 17 10:52:36.473 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Switch1 udp-e01f90e0-9686-4af9-aebe-66e0bb6beff5 1 
+Oct 17 10:52:52.116 HYPERVISOR: exec_cmd: nio bind_filter udp-e01f90e0-9686-4af9-aebe-66e0bb6beff5 2 capture 
+Oct 17 10:52:52.116 HYPERVISOR: exec_cmd: nio setup_filter udp-e01f90e0-9686-4af9-aebe-66e0bb6beff5 2 en10mb /home/guipc/Desktop/LEI/2ºAno/1ºSemestre/RS/P4/project-files/captures/ESW1_FastEthernet114_to_Switch1_Ethernet8.pcap 
+Oct 17 11:09:15.549 HYPERVISOR: exec_cmd: ethsw delete Switch1 
+Oct 17 11:09:15.643 HYPERVISOR: exec_cmd: hypervisor stop 
+Oct 17 11:09:15.681 HYPERVISOR: Stopped.
+Oct 17 11:09:15.681 GENERAL: reset done.
