@@ -1,0 +1,51 @@
+Nov 20 12:26:07.425 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Nov 20 12:26:07.425 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51931.
+Nov 20 12:26:07.433 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 20 12:26:07.434 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guipc/Desktop/LEI/2ºAno/1ºSemestre/RS/P7/project-files/dynamips 
+Nov 20 12:26:07.434 GENERAL: working_dir=/home/guipc/Desktop/LEI/2ºAno/1ºSemestre/RS/P7/project-files/dynamips
+Nov 20 12:26:07.434 HYPERVISOR: exec_cmd: hypervisor working_dir /home/guipc/Desktop/LEI/2ºAno/1ºSemestre/RS/P7/project-files/dynamips/61084178-2d25-4a08-b408-5b2627db4c3c 
+Nov 20 12:26:07.434 GENERAL: working_dir=/home/guipc/Desktop/LEI/2ºAno/1ºSemestre/RS/P7/project-files/dynamips/61084178-2d25-4a08-b408-5b2627db4c3c
+Nov 20 12:26:07.434 HYPERVISOR: exec_cmd: vm create R2 2 c7200 
+Nov 20 12:26:07.434 VM: VM R2 created.
+Nov 20 12:26:07.434 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5004 
+Nov 20 12:26:07.434 HYPERVISOR: exec_cmd: c7200 get_mac_addr R2 
+Nov 20 12:26:07.434 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:26:07.434 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-FE 
+Nov 20 12:26:07.434 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Nov 20 12:26:07.435 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:26:07.435 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60608040 
+Nov 20 12:26:07.435 HYPERVISOR: exec_cmd: vm set_ios R2 /root/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Nov 20 12:26:07.435 HYPERVISOR: exec_cmd: c7200 set_mac_addr R2 ca02.1086.0000 
+Nov 20 12:26:07.435 HYPERVISOR: exec_cmd: vm set_nvram R2 512 
+Nov 20 12:26:07.435 HYPERVISOR: exec_cmd: vm set_ram R2 512 
+Nov 20 12:26:07.435 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:26:07.435 HYPERVISOR: exec_cmd: vm slot_remove_binding R2 0 0 
+Nov 20 12:26:07.436 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:26:07.436 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 0 C7200-IO-2FE 
+Nov 20 12:26:07.436 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:26:07.436 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 PA-2FE-TX 
+Nov 20 12:26:07.436 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:26:07.436 HYPERVISOR: exec_cmd: vm slot_add_binding R2 2 0 PA-2FE-TX 
+Nov 20 12:26:07.753 HYPERVISOR: exec_cmd: nio create_udp udp-4a9a1bc8-ada8-4f9f-9e63-feed8f49bb56 10008 127.0.0.1 10009 
+Nov 20 12:26:07.961 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-4a9a1bc8-ada8-4f9f-9e63-feed8f49bb56 
+Nov 20 12:26:07.961 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:26:08.245 HYPERVISOR: exec_cmd: nio create_udp udp-b64c0155-09a5-43e6-8d69-fbfb83b88a73 10018 127.0.0.1 10019 
+Nov 20 12:26:08.245 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-b64c0155-09a5-43e6-8d69-fbfb83b88a73 
+Nov 20 12:26:08.246 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:40:33.519 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Nov 20 12:40:33.520 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/guipc/Desktop/LEI/2ºAno/1ºSemestre/RS/P7/project-files/dynamips/c7200-adventerprisek9-mz.151-4.M2.image-512.ghost 
+Nov 20 12:40:33.520 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:40:33.521 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg configs/i2_private-config.cfg 
+Nov 20 12:40:33.521 HYPERVISOR: exec_cmd: vm start R2 
+Nov 20 12:41:03.760 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 20 12:54:54.605 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:54:54.605 HYPERVISOR: exec_cmd: vm stop R2 
+Nov 20 12:54:54.716 VM: VM R2 shutdown.
+Nov 20 12:54:54.717 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 20 12:54:55.223 HYPERVISOR: exec_cmd: vm get_status R2 
+Nov 20 12:54:55.223 HYPERVISOR: exec_cmd: vm extract_config R2 
+Nov 20 12:54:55.224 HYPERVISOR: exec_cmd: vm delete R2 
+Nov 20 12:54:55.224 VM: VM R2 destroyed.
+Nov 20 12:54:55.224 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 20 12:54:55.255 HYPERVISOR: Stopped.
+Nov 20 12:54:55.255 GENERAL: reset done.
